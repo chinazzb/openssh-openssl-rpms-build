@@ -1,6 +1,15 @@
 # Precautions
 <font color=red>Based on openssl-1.1.1g, the system default openssl-1.0.2k openssl-devel-1.0.2k openssl-libs-1.0.2k will be delete</font>
 
+openssh disables remote root login by default
+
+
+enable modify the configuration item PermitRootLogin yes 
+
+#PermitRootLogin yes
+
+PermitRootLogin yes
+
 # Introduction
 ## openssh:
 
