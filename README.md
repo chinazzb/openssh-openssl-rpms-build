@@ -16,12 +16,12 @@ reference https://github.com/Junyangz/upgrade-openssh-centos/blob/master/README.
 openssh-8.2p1 rpm spec file has bug , Two files are missing. man8/ssh-sk-helper.8.gz and openssh/ssh-sk-helper
 
 So script add: 
-
+```shell
 if [ "${version}" = "8.2p1" ]; then
     sed -i "356a %attr(4711,root,root) %{_libexecdir}/openssh/ssh-sk-helper" openssh.spec
     sed -i "356a %attr(0644,root,root) %{_mandir}/man8/ssh-sk-helper.8.gz" openssh.spec
 fi
-
+```
 ## openssl:
 reference to centos official spec and https://src.fedoraproject.org/rpms/openssl/blob/master/f/openssl.spec
 ### get centos official
