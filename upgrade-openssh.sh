@@ -22,8 +22,9 @@ rpm -ivh ./RPMS/openssl-libs-1.1.1g-19.el7.x86_64.rpm ./RPMS/openssl-devel-1.1.1
 ./RPMS/openssl-1.1.1g-19.el7.x86_64.rpm --nodeps
 
 cp ./openssl-libs-1.0.2k/* /usr/lib64/ 
-cp ./openssl-libs-1.0.2k/libcrypto.so.1.0.2k /usr/lib64/libcrypto.so.10
-cp ./openssl-libs-1.0.2k/libssl.so.1.0.2k /usr/lib64/libssl.so.10
+cd /usr/lib64/
+ln -sf libcrypto.so.1.0.2k libcrypto.so.10
+ln -sf libssl.so.1.0.2k libssl.so.10
 
 
 
