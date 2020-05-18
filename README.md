@@ -23,11 +23,13 @@ rpm2cpio openssl-1.0.2k-19.el7.src.rpm | cpio -civ '*.spec'
 
 # Instructions
 upgrade:
-bash ./upgrade-openssh.sh 
+
+* bash ./upgrade-openssh.sh 
 
 rpmbuild:
-bash ./rpmbuild-openssh.sh
-bash ./rpmbuild-openssl.sh
+
+* bash ./rpmbuild-openssh.sh
+* bash ./rpmbuild-openssl.sh
 
 
 # changlog
