@@ -3,7 +3,6 @@
 
 openssh disables remote root login by default
 
-
 enable modify the configuration item PermitRootLogin yes 
 
 #PermitRootLogin yes
