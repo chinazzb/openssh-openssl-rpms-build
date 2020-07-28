@@ -10,7 +10,7 @@ yum install git wget rpm-build krb5-devel lksctp-tools-devel perl-Test-Harness p
 mkdir -p ~/rpmbuild/SOURCES && cd ~/rpmbuild/SOURCES
 git clone https://src.fedoraproject.org/rpms/openssl.git
 mv openssl/* ./
-wget -c https://www.openssl.org/source/openssl-$version.tar.gz
+wget -c https://www.openssl.org/source/openssl-$version.tar.gz --no-check-certificate
 
 # rpmbuild
 /usr/bin/cp -f  $home_dir/specs/openssl.spec ~/rpmbuild/SOURCES/

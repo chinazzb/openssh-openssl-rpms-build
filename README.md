@@ -41,6 +41,10 @@ rpmbuild:
 
 
 # changlog
+2020-07-28:
+    Upgrade openssh-8.2p1 to openssh-8.3p1
+    Hide server version numbern
+
 
 2020-05-15:
    Compile based on openssl-devel-1.1.1g
