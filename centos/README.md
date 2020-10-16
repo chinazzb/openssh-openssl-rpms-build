@@ -41,6 +41,10 @@ rpmbuild:
 
 
 # changlog
+2020-10-16:
+    Upgrade openssh-8.3p1 to openssh-8.4p1
+    Tried to hide the version number, but failed
+
 2020-07-28:
     Upgrade openssh-8.2p1 to openssh-8.3p1
     Hide server version numbern
