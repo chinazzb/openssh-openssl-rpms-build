@@ -1,5 +1,6 @@
 # Precautions
 <font color=red>Need to use root user,Please install gcc gcc-c++ first</font>
+
 zypper install gcc gcc-c++ -y 
 
 openssh disables remote root login by default
