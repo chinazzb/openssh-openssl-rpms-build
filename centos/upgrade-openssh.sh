@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 set -e 
 
-version="8.3p1"
+version="8.4p1"
 
 # 
 yum install createrepo -y

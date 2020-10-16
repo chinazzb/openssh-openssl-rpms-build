@@ -4,7 +4,7 @@ set -e
 
 rhel_version=`rpm -q --queryformat '%{VERSION}' centos-release`
 #openssh version
-version="8.3p1"
+version="8.4p1"
 yum install -y pam-devel rpm-build rpmdevtools zlib-devel openssl-devel krb5-devel gcc wget libXt-devel imake gtk2-devel
 mkdir -p ~/rpmbuild/SOURCES && cd ~/rpmbuild/SOURCES
 
